@@ -1,5 +1,20 @@
+'''
+Name: Nathan Carr
+Time: Thursday @ 2pm
+'''
 def fibonacci(n):
-    #write your code here
+
+    if n < 0:
+        return -1
+    else:
+        x = 0
+        y = 1
+        z = 0
+        for a in range(n):
+            z = x
+            x = x + y
+            y = z
+        return x
 
 
 if __name__ == '__main__':
